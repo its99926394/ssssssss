@@ -1,0 +1,27 @@
+#A = 7
+#B = 3
+#입력
+#int = 정수
+
+# a,b = input("").split()
+# a = int(a)
+# b = int(b)
+#       # 7 3
+# print("%d + %d = %d" %(a,b,a+b))
+# print("{} - {} = {}".format(a, b, a-b))
+# print(f"{a} * {b} = {a * b}")
+# print("%d / %d = %f" %(a,b,a/b))
+# print("%d // %d = %d" %(a,b,a//b))
+# print("%d %% %d = %d" %(a,b,a%b))
+
+
+#출력 형태
+#7 + 3 = 10
+#7 - 3 = 4
+#7 * 3 = 21
+#7 / 3 = 2.3333
+#7 // = 2
+#7 % 3 = 1
+
+s = input()
+print(s + "??!")
