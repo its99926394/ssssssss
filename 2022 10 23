@@ -1,0 +1,81 @@
+# h,m = input().split()
+# h = int(h)
+# m = int(m)
+#
+# if m < 45:
+#     if(h != 0):
+#         print(h-1, 15+m)
+#     else:
+#         print(23, 15+m)
+# elif m>= 45:
+#     print(h, m-45)
+
+
+# a, b = input().split()
+# a = int(a)
+# b = int(b)
+# c = int(input())
+#
+# if b+c < 60:
+#     print(a, b+c)
+# elif b+c >= 60:
+#     if a+((b+c)//60) >= 24:
+#         print((a+(b+c)//60)-24, (b+c)%60)
+#     elif a+((b+c)//60) < 24:
+#         print(a+(b+c)//60, (b+c)%60)
+
+# a,b,c = input().split()
+# a = int(a)
+# b = int(b)
+# c = int(c)
+# p = 0    #상금
+# 1. 같은눈이 3개가 나올 경우
+#      상금 = 10000 + 같은 눈 * 1000
+# 2. 같은눈이 2개가 나올 경우
+#      상금 = 1000 + 같은눈  * 100
+# 3. 다 다를 경우
+#     상금 = 가장큰눈 * 100
+#
+# if a == b and b == c:
+#     print(10000 + a * 1000)
+# elif a == b and a != c:
+#     print(1000 + a * 100)
+# elif a == c and a != b:
+#     print(1000 + a * 100)
+# elif b == c and b != a:
+#     print(1000 + b * 100)
+# else:
+#     if a > b and a > c:
+#         print(a * 100)
+#     elif b > a and b > c:
+#         print(b * 100)
+#     else:
+#         print(c * 100)
+
+# n = int(input())
+# for _ in range(n):
+#     num, string = input().split()
+#     num = int(num)
+#     output = ''
+#     for s in string:
+#         output += s * num
+#         print(f"out put = {output}, s = {s}, num = {num}")
+
+string = input()
+string = string.upper()
+string_s = list(set(string))
+print(string_s)
+cnts = []
+for s in string_s:
+    cnts.append(string.count(s))
+max_num = max(cnts)
+if cnts.count(max_num) >= 2:
+    print('?')
+else:
+    idx = cnts.index(max_num)
+    print(string_s[idx])
+# 가장 많이 입력된 단어를 구한다
+# 만약 가장 많이 입력된 단어의 수가 2개 이상이라면
+# ?를 출력한다
+# 그게 아니라 가장 많이 입려된 단어가 한개라면
+# 해당 문자를 대문자로 변환하여 출력한다.
